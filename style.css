@@ -1,0 +1,47 @@
+body
+{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.container
+{
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);;
+    height:100px;
+    width:100px;
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-one
+{
+    height:70px;
+    width:70px;
+    border: 5px solid white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.div-two
+{
+    height:45px;
+    width:45px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+.div-two::after
+{
+    content:"";
+    height:8px;
+    width:8px;
+    position: absolute;
+    background: #fff;
+    top:3px;
+    right:5px;
+    border-radius: 50%;
+}
